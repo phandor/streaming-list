@@ -7,7 +7,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('My Streaming List'), centerTitle: true,),
-      body: ListView()
+      body: ListView.builder(
+        itemCount: 3,
+        itemBuilder: (context, index) => const Text("Hehe")
+      )
     );
   }
 }
